@@ -5,7 +5,7 @@ set -u
 trap "exit 1" TERM
 export TOP_PID=$$
 
-: "${WFC_REPO:=balena-os/wifi-connect}"
+: "${WFC_REPO:=digiogithub/chestnut-wifi-connect}"
 : "${WFC_INSTALL_ROOT:=/usr/local}"
 
 SCRIPT='raspbian-install.sh'
@@ -159,7 +159,7 @@ confirm_installation() {
 }
 
 install_wfc() {
-    local _regex='browser_download_url": "\K.*rpi\.tar\.gz'
+    local _regex='browser_download_url": "\K.*aarch64\.zip'
     local _arch_url
     local _wfc_version
     local _download_dir

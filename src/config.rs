@@ -6,9 +6,9 @@ use std::net::Ipv4Addr;
 use std::path::PathBuf;
 use std::str::FromStr;
 
-const DEFAULT_GATEWAY: &str = "192.168.42.1";
-const DEFAULT_DHCP_RANGE: &str = "192.168.42.2,192.168.42.254";
-const DEFAULT_SSID: &str = "WiFi Connect";
+const DEFAULT_GATEWAY: &str = "192.168.4.1";
+const DEFAULT_DHCP_RANGE: &str = "192.168.4.2,192.168.4.254";
+const DEFAULT_SSID: &str = "chestnut-hub";
 const DEFAULT_ACTIVITY_TIMEOUT: &str = "0";
 const DEFAULT_UI_DIRECTORY: &str = "ui";
 const DEFAULT_LISTENING_PORT: &str = "80";
